@@ -1,0 +1,30 @@
+releases:
+#- name: prom-norbac-ubuntu
+#  namespace: exocomp
+#  chart: stable/prometheus
+#  set:
+#  - name: rbac.create
+#    value: false
+#- name: cassandra
+#  namespace: exocomp
+#  chart: incubator/cassandra
+#- name: cassandra-reaper
+#  namespace: exocomp
+#  chart: incubator/cassandra-reaper
+- name: jaeger-operator
+  chart: stable/jaeger-operator
+  version: 2.4.1
+  namespace: jaeger
+
+#helmDefaults:
+#  tillerless: true
+#  namespace: jaeger
+
+#repositories:
+#  - name: stable
+#    url: http://storage.googleapis.com/kubernetes-charts
+##    url: https://kubernetes-charts.storage.googleapis.com
+#  - name: incubator
+#    url: http://storage.googleapis.com/kubernetes-charts-incubator
+#  - name: gomods
+#    url: https://athens.blob.core.windows.net/charts
